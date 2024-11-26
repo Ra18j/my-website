@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery of Paintings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8e1;
+            margin: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #ffa726;
+            color: white;
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px auto;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border: 2px solid #ffa726;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .navigation {
+            margin-top: 20px;
+        }
+        .navigation a {
+            text-decoration: none;
+            background-color: #ffa726;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .navigation a:hover {
+            background-color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gallery of Van Gogh's Famous Paintings</h1>
+    </header>
+    <main>
+        <div class="gallery">
+            <a href="details_starry_night.html">
+                <img src="image/starry_night.jpg" alt="Starry Night">
+            </a>
+            <a href="details_sunflowers.html">
+                <img src="image/sunflowers.jpg" alt="Sunflowers">
+            </a>
+            <a href="details_irises.html">
+                <img src="image/irises.jpg" alt="Irises">
+            </a>
+        </div>
+        <div class="navigation">
+            <a href="index.html">Back to Home Page</a>
+        </div>
+    </main>
+</body>
+</html>
